@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
 }
 
 .main {
@@ -11,21 +17,126 @@
 }
 
 .main .box {
-  height: 80vh;
+  height: 644vh;
   width: 100%;
-  opacity: 0.44;
+  opacity: 0.69;
   position: absolute;
   top: 0;
   background-color: black;
 }
 
 nav {
-  max-width: 80vw;
+  max-width: 70vw;
   justify-content: space-between;
-
   margin: auto;
   display: flex;
   align-items: center;
   flex-direction: row;
   height: 62px;
+  position: relative;
+  z-index: 10;
+}
+
+nav img {
+  width: 214px;
+  position: relative;
+  z-index: 10;
+}
+
+.hero {
+  font-family: "Open Sans", sans-serif;
+
+  height: calc(100% - 62px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 23px;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.hero > :nth-child(1) {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 62px;
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+}
+.hero > :nth-child(2) {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 61px;
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+}
+.hero > :nth-child(3) {
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+}
+
+.hero > :nth-child(4) {
+  font-weight: 400;
+  font-size: 21px;
+  text-align: center;
+}
+.separation {
+  height: 11px;
+  background-color: gray;
+}
+
+.btn {
+  font-family: "Poppins", sans-serif;
+  padding: 8px 15px;
+  font-weight: 400;
+  color: white;
+  background-color: rgba(248, 243, 243, 0.021);
+  border-radius: 4px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 21px 40px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 4px;
+  height: auto;
+}
+
+.hero-buttons {
+
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.main input {
+  padding: 21px 390px 21px 35px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.2);
+  border: 1px solid rgba(246, 238, 238, 0.884);
+}
+
+.btn-red-sm {
+  font-family: "Poppins", sans-serif;
+  padding: 9px 19px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid black;
+  font-weight: 500;
 }
